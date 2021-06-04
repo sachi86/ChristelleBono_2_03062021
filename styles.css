@@ -1,0 +1,41 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+#container {
+	width: 95%;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+}
+#logo {
+	width: 100px;
+	padding-top: 35px;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+nav ul {
+	display: flex;
+}
+nav li, nav a {
+	list-style: none;
+}
+.menu a {
+	padding: 37px 35px 0 40px;
+	text-decoration: none;
+	color: black;
+}
+.menu a:hover {
+	color:  #0065FC;
+	border-top: solid 2px #0065FC;
+}
+.inscrire {
+	color: #0065FC;
+	font-weight: bold;
+	padding: 37px 35px 0 40px;
+	text-decoration: none;
+}
