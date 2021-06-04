@@ -59,3 +59,13 @@ footer ul {
 .colonne_footer li {
 	padding: 0 0 15px 0;
 }
+main {
+	padding: 50px;
+}
+.recherche_ville {
+	display: flex;
+	flex-direction: row;
+}
+.fas {
+	background-color: #F2F2F2;
+}
