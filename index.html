@@ -10,69 +10,79 @@
     </head>
     <body>
         <div id="container">
+            <!--En-tête-->
             <header>
+                <!--logo-->
                 <img id="logo" src="images/Reservia.svg" alt="Logo de Reservia">
+                <!--menu de navigation-->
                 <nav>
                     <ul>
                         <li class="menu">
-                            <a href="#Hébergements">Hébergements</a>
+                            <a href="#Hébergements" class="black">Hébergements</a>
                         </li>
                         <li class="menu">
-                            <a href="#Activités">Activités</a>
+                            <a href="#Activités" class="black">Activités</a>
                         </li>
-                        <li>
-                            <a href="#" class="inscrire">S'inscrire</a>
+                        <li class="black_link">
+                            <a href="#" class="signup">S'inscrire</a>
                         </li>
                     </ul>
                 </nav>
             </header>
             <main>
-                <section class="recherche">
-                    <h1>Trouvez votre hébergements pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                    <div class="recherche_ville">
-                        <i class="fas fa-map-marker-alt"></i>
+                <!--section de recherche-->
+                <section id="search_section">
+                    <h1 class="black" id="search_title">Trouvez votre hébergements pour des vacances de rêve</h1>
+                    <p class="black">En plein centre ville ou en pleine nature</p>
+                    <div class="search_city">
+                        <div id="mapmarker" class="grey">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
                         <form method="post" action="traitement.php">
-                            <input type="search" value="Marseille, France">
-                            <input type="submit" value="Rechercher">
+                            <input type="search" placeholder="Marseille, France" id="search">
                         </form>
+                        <button class="button">Rechercher</button>
                     </div>
                 </section>
             </main>
-            <footer>
-                <div class="colonne_footer">
-                    <h3>A propos</h3>
+            <!--bas de page-->
+            <footer class="grey">
+                <!--colonne "Apropos"-->
+                <div class="column_footer">
+                    <h3 class="black">A propos</h3>
                     <ul>
                         <li>
-                            <a href="#">Fonctionnement du site</a>
+                            <a href="#" class="black">Fonctionnement du site</a>
                         </li>
                         <li>
-                            <a href="#">Conditions générales de vente</a>
+                            <a href="#" class="black">Conditions générales de vente</a>
                         </li>
                         <li>
-                            <a href="#">Données et confidentialité</a>
+                            <a href="#" class="black">Données et confidentialité</a>
                         </li>  
                     </ul>
                 </div>
-                <div class="colonne_footer">
-                    <h3>Nos hébergements</h3>
+                <!--colonne "Nos hébergements"-->
+                <div class="column_footer">
+                    <h3 class="black">Nos hébergements</h3>
                     <ul>
                         <li>
-                            <a href="#">Charte qualité</a>
+                            <a href="#" class="black">Charte qualité</a>
                         </li>
                         <li>
-                            <a href="#">Soumettre votre hôtel</a>
+                            <a href="#" class="black">Soumettre votre hôtel</a>
                         </li>
                     </ul>
                 </div>
-                <div class="colonne_footer">
-                    <h3>Assistance</h3>
+                <!--colonne "Assistance"-->
+                <div class="column_footer">
+                    <h3 class="black">Assistance</h3>
                     <ul>
                         <li>
-                            <a href="#">centre d'aide</a>
+                            <a href="#" class="black">centre d'aide</a>
                         </li>
                         <li>
-                            <a href="#">Nous contacter</a>
+                            <a href="#" class="black">Nous contacter</a>
                         </li> 
                     </ul>
                 </div>

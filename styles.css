@@ -1,3 +1,9 @@
+.black {
+	color: black;
+}
+.grey {
+	background-color: #F2F2F2;
+}
 body {
 	font-family: 'Raleway', sans-serif;
 	display: flex;
@@ -6,6 +12,7 @@ body {
 #container {
 	width: 100%;
 }
+/*En-tête*/
 header {
 	display: flex;
 	justify-content: space-between;
@@ -25,47 +32,91 @@ nav li, nav a {
 	list-style: none;
 }
 .menu a {
-	padding: 38px 34px 0 34px;
+	padding: 37px 34px 0 34px;
 	text-decoration: none;
-	color: black;
 }
 .menu a:hover {
 	color:  #0065FC;
 	border-top: solid 2px #0065FC;
 }
-.inscrire {
+.signup {
 	color: #0065FC;
 	font-weight: bold;
-	padding: 37px 78px 0 34px;
+	padding: 37px 20px 0 20px;
 	text-decoration: none;
+	margin-right: 58px;
 }
+.black_link a:hover {
+	color: black;
+	border-top: solid 2px black;
+}
+main {
+	padding: 50px;
+}
+/*section recherche*/
+.search_city {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+#search_title {
+	font-size: 21px;
+	line-height: 4px;
+}
+#mapmarker {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	border-radius: 15px 0 0 15px;
+}
+#search {
+	width:230px;
+	height: 50px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bolder;
+	font-size: 16px;
+	border: solid 1px #F2F2F2;
+	padding-left: 15px;
+}
+::placeholder {
+	color: black;
+}
+#search:focus {
+	border-color:#0065FC;
+	outline: #0065FC;
+}
+.button {
+	width: 135px;
+	height: 50px;
+	background-color: #0065FC;
+	border-radius: 0 15px 15px 0;
+	color: white;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	font-size:16px
+}
+/*Bas de page*/
 footer {
 	display:flex;
 	flex-direction: row;
 	height: 216px;
-	background-color: #F2F2F2;
+}
+.column_footer a:hover {
+	color: #0065FC;
 }
 footer ul {
 	list-style: none;
 	padding: 0;
 }
-.colonne_footer {
+.column_footer {
 	padding: 30px 150px 0 50px;
 }
-.colonne_footer a {
-	color: black;
+.column_footer a {
 	text-decoration: none;
 }
-.colonne_footer li {
+.column_footer li {
 	padding: 0 0 15px 0;
-}
-main {
-	padding: 50px;
-}
-.recherche_ville {
-	display: flex;
-	flex-direction: row;
-}
-.fas {
-	background-color: #F2F2F2;
 }
