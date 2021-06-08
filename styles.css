@@ -98,6 +98,47 @@ main {
 	font-family: 'Raleway', sans-serif;
 	font-size:16px
 }
+/*section des filtres*/
+.filters {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.filters ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+.filters li {
+	display: flex;
+	flex-direction: row;
+	border: solid 2px;
+	border-radius: 50px;
+	border-color: #F2F2F2;
+	height: 50px;
+	margin-right: 25px;
+}
+.filter_icon {
+	color: #0065FC;
+	border-radius: 50px;
+    font-size: 1.4em;
+    padding: 14px;
+    width: 30px;
+    text-align: center;
+	background-color: #DEEBFF;
+	margin:auto;
+}
+.filter_name {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	font-weight: bolder;
+	padding: 10px 20px 10px 15px;
+}
+.info {
+	display: flex;
+	flex-direction: row;
+}
 /*Bas de page*/
 footer {
 	display:flex;
