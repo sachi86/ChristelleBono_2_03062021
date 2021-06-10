@@ -1,8 +1,9 @@
-.black {
-	color: black;
-}
-.grey {
-	background-color: #F2F2F2;
+:root
+{
+    --color1: #f2f2f2;
+    --color2: #0065fc;
+	--color3: #DEEBFF;
+	--radius: 20px;
 }
 body {
 	font-family: 'Raleway', sans-serif;
@@ -11,6 +12,12 @@ body {
 }
 #container {
 	width: 100%;
+}
+.menu a:visited, .column_footer a:visited {
+	color: black;
+}
+.signup a:visited {
+	color: var(--color2);
 }
 /*En-tête*/
 header {
@@ -36,19 +43,19 @@ nav li, nav a {
 	text-decoration: none;
 }
 .menu a:hover {
-	color:  #0065FC;
-	border-top: solid 2px #0065FC;
+	color:  var(--color2);
+	border-top: solid 2px var(--color2);
 }
 .signup {
-	color: #0065FC;
+	color: var(--color2);
 	font-weight: bold;
 	padding: 37px 20px 0 20px;
 	text-decoration: none;
 	margin-right: 58px;
 }
 .black_link a:hover {
-	color: black;
-	border-top: solid 2px black;
+	color: var(--color3);
+	border-top: solid 2px var(--color3) ;
 }
 main {
 	padding: 50px;
@@ -71,6 +78,7 @@ main {
 	height: 50px;
 	font-size: 20px;
 	border-radius: 15px 0 0 15px;
+	background-color: var(--color1)
 }
 #search {
 	width:230px;
@@ -78,55 +86,62 @@ main {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bolder;
 	font-size: 16px;
-	border: solid 1px #F2F2F2;
+	border: solid 1px var(--color1);
 	padding-left: 15px;
 }
 ::placeholder {
 	color: black;
 }
 #search:focus {
-	border-color:#0065FC;
-	outline: #0065FC;
+	border-color:var(--color2);
+	outline: var(--color2);
 }
 .button {
 	width: 135px;
 	height: 50px;
-	background-color: #0065FC;
+	background-color: var(--color2);
 	border-radius: 0 15px 15px 0;
-	color: white;
+	color: var(--color1);
 	border: none;
 	font-family: 'Raleway', sans-serif;
 	font-size:16px
 }
-/*section des filtres*/
+/*filtres de recherche*/
 .filters {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	margin: 20px;
 }
-.filters ul {
+.filters h3 {
+	padding-right: 25px;
+}
+.filters form {
 	display: flex;
 	flex-direction: row;
 	list-style: none;
 }
-.filters li {
+.filters label {
 	display: flex;
 	flex-direction: row;
 	border: solid 2px;
 	border-radius: 50px;
-	border-color: #F2F2F2;
+	border-color: var(--color1);
 	height: 50px;
 	margin-right: 25px;
+	cursor: pointer;
 }
 .filter_icon {
-	color: #0065FC;
+	color: var(--color2);
 	border-radius: 50px;
-    font-size: 1.4em;
-    padding: 14px;
-    width: 30px;
-    text-align: center;
-	background-color: #DEEBFF;
-	margin:auto;
+    font-size: 16px;
+    width: 50px;
+	padding: 17px 0 17px 0;
+	text-align:center;
+	margin: auto;
+	background-color: var(--color3);
+	z-index: 2;
+	transition: all .1s;
 }
 .filter_name {
 	display: flex;
@@ -134,19 +149,78 @@ main {
 	font-size: 16px;
 	font-weight: bolder;
 	padding: 10px 20px 10px 15px;
+	z-index: 1;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    transition: all .2s;
 }
-.info {
-	display: flex;
-	flex-direction: row;
+.filters input[type="checkbox"] {
+	display: none;
+}
+.filters input[type="checkbox"]:checked + label >.filter_icon{
+	color: var(--color3);
+	border-color: var(--color3);
+	background-color: var(--color2);
+}
+.filters input[type="checkbox"]:checked + label >span
+{
+    background-color: #var(var(--color3));
+}
+.filters label:hover  {
+	border:0.1px solid var(--color2);
+	background-color: var(--color3);
+}
+.info
+{
+    display: flex;
+    align-items: center;
+}
+.info .fa-info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    color: var(--color2);
+    font-size: .8rem;
+    border: 1px solid var(--color1);
+    border-radius: 15px;
+}
+/*section hébergements*/
+.lodging {
+	display:flex;
+	flex-flow: row wrap;
+	width: 879px;
+	background-color: var(--color1);
+	border-radius: 20px;
+}
+.lodging_card {
+	width: 247px;
+	height: 200px;
+	border-radius: 20px 20px 20px 20px;
+	border: solid 4px #FFFFFF;
+	border-radius: var(--radius);
+	background-color: #FFFFFF;
+}
+.img_cannebière {
+	width:235px;
+	height:115px;
+	border-radius: var(--radius) var(--radius) 0 0;
+	background-image: url(images/hébergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg)
 }
 /*Bas de page*/
 footer {
 	display:flex;
 	flex-direction: row;
 	height: 216px;
+	background-color: var(--color1);
 }
 .column_footer a:hover {
-	color: #0065FC;
+	color: var(--color2);
 }
 footer ul {
 	list-style: none;

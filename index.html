@@ -31,10 +31,11 @@
             <main>
                 <!--section de recherche-->
                 <section id="search_section">
+                <!--moteur de recherche-->
                     <h1 class="black" id="search_title">Trouvez votre hébergements pour des vacances de rêve</h1>
                     <p class="black">En plein centre ville ou en pleine nature</p>
                     <div class="search_city">
-                        <div id="mapmarker" class="grey">
+                        <div id="mapmarker">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
                         <form method="post" action="traitement.php">
@@ -42,34 +43,123 @@
                         </form>
                         <button class="button">Rechercher</button>
                     </div>
-                </section>
-                <!--Section des filtres-->
-                <section class="filters_section">
+                <!--filtres de recherche-->
                     <div class="filters">
-                        <h3 class="filters_title">Filtres</h3>
-                        <ul>
-                            <li>
+                        <h3>Filtres</h3>
+                        <form method="post" action="traitement.php">
+                            <input type="checkbox" name="filter">
+                            <label>
                                 <i class="fa fa-money-bill-wave filter_icon" aria-hidden="true"></i>
-                                <p class="filter_name">Economique</p>
-                            </li>
-                            <li>
+                                <span class="filter_name">Economique</span>
+                            </label>
+                            <input type="checkbox" name="filter">
+                            <label>
                                 <i class="fa fa-child filter_icon" aria-hidden="true"></i>
-                                <p class="filter_name">Familial</p>
-                            </li>
-                            <li>
+                                <span class="filter_name">Familial</span>
+                            </label>
+                            <input type="checkbox" name="filter">
+                            <label>
                                 <i class="fa fa-heart filter_icon" aria-hidden="true"></i>
-                                <p class="filter_name">Romantique</p>
-                            </li>
-                            <li>
+                                <span class="filter_name">Romantique</span>
+                            </label>
+                            <input type="checkbox" name="filter">
+                            <label>
                                 <i class="fas fa-dog filter_icon" aria-hidden="true"></i>
-                                <p class="filter_name">Animaux autorisé</p>
-                            </li>
-                        </ul>    
+                                <span class="filter_name">Animaux autorisé</span>
+                            </label>
+                        </form>
                     </div>
                     <div class="info">
                         <i class="fa fa-info info_icon" aria-hidden="true"></i>
                         <p class="paragraph_info">Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>
+                </section>
+                <section class="lodging">
+                    <h2>Hébergements à Marseille</h2>
+                    <a href="#" class="lodging_card">
+                        <div class="img_cannebière"></div>
+                        <div class="photo_info">
+                            <h3>Auberge la Cannebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <div class="grade">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="lodging_card">
+                        <div class="img_port"></div>
+                        <div class="photo_info">
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de 52€</p>
+                            <div class="grade">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="lodging_card">
+                        <div class="img_mouette"></div>
+                        <div class="photo_info">
+                            <h3>Hôtel Les Mouettes</h3>
+                            <p>Nuit à partir de 76€</p>
+                            <div class="grade">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="lodging_card">
+                        <div class="img_mer"></div>
+                        <div class="photo_info">
+                            <h3>Hôtel de la mer</h3>
+                            <p>Nuit à partir de 46€</p>
+                            <div class="grade">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="lodging_card">
+                        <div class="img_panier"></div>
+                        <div class="photo_info">
+                            <h3>Auberge le Panier</h3>
+                            <p>Nuit à partir de 23€</p>
+                            <div class="grade">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="lodging_card">
+                        <div class="img_amina"></div>
+                        <div class="photo_info">
+                            <h3>Hôtel chez Amina</h3>
+                            <p>Nuit à partir de 96€</p>
+                            <div class="grade">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </a>
                 </section>
             </main>
             <!--bas de page-->
