@@ -13,11 +13,17 @@ body {
 #container {
 	width: 100%;
 }
-.menu a:visited, .column_footer a:visited, .lodging a:visited {
+.menu a:visited, .column_footer a:visited, .lodging a:visited, .best_lodgings a:visited {
 	color: black;
 }
 .signup a:visited {
 	color: var(--color2);
+}
+h3, .filter_name {
+	font-size: 15px;
+}
+p {
+	font-size: 14px;
 }
 /*En-tête*/
 header {
@@ -151,7 +157,7 @@ nav li, nav a {
 	margin: 0;
 	left: 50px;
 	height: 50px;
-	width: 40px;
+	width: 35px;
 	z-index: 1;
 	opacity: 0.1;
 	-moz-appearance:none;
@@ -198,36 +204,39 @@ nav li, nav a {
 }
 main {
 	margin: 0 50px 20px 50px;
+	display: flex;
+	flex-flow:row wrap;
 }
 /*section hébergements*/
 .lodging {
 	display:flex;
 	flex-flow: column wrap;
-	width: 878px;
-	height: 627px;
+	width: 815px;
+	height: 605px;
+	padding: 30 10 10 10;
 	background-color: var(--color1);
 	border-radius: 20px;
+	margin-right: 20px;
+}
+.lodging a {
+	text-decoration: none;
 }
 .lodging h2 {
 	text-align: start;
 	margin: 40px 0 0 40px;
 }
-.lodging a {
-	text-decoration: none;
-}
 .lodging_cards {
 	display: flex;
 	flex-flow: column wrap;
-	height: 480px;
-	width: 805px;
+	height: 450px;
+	width: 769px;
 	margin: 0px 20px 0px 20px;
 }
 .lodging_card {
-	width: 240px;
-	height: 200px;
-	border-radius: 20px 20px 20px 20px;
-	border: solid 4px #FFFFFF;
+	width: 220px;
+	height: 185px;
 	border-radius: var(--radius);
+	border: solid 4px #FFFFFF;
 	background-color: #FFFFFF;
 	box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
 	margin:15px;
@@ -270,14 +279,90 @@ main {
 	margin-left: 10px;
 }
 .lodging i {
-	color: var(--color2);
 	margin: 0;
-	font-size: 14px;
+	font-size: 13px;
+}
+.star_blue {
+	color:var(--color2)
+}
+.star_grey {
+	color: var(--color1)
 }
 .show_more {
 	margin: 20px 0 0 40px;
 	font-weight: bolder;
 	align-self: flex-start;
+}
+/*Section Les plus populaires*/
+.best_lodgings {
+	display:flex;
+	flex-direction: column;
+	width: 385px;
+	height: 605px;
+	background-color: var(--color1);
+	border-radius: 20px;
+}
+.best_lodging_title {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+}
+.best_lodgings h2 {
+	margin-bottom: 0px;
+}
+.best_lodging_cards {
+	display: flex;
+	flex-direction: column;
+	margin: 0px 20px 20px 20px;
+}
+.best_lodging_card {
+	display:flex;
+	flex-flow: column wrap;
+	height: 135px;
+	width: 305px;
+	border-radius: var(--radius);
+	border:solid 4px #FFFFFF;
+	background-color: #FFFFFF;
+	box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
+	margin: 15px;
+}
+.best_lodging_card:hover {
+	transform: scale(1.05);
+	box-shadow: 5px 5px 10px rgb(177 177 177 / 20%);
+	transition: 1s;
+}
+.img_best_lodging {
+    background-size: cover;
+	background-position: center;
+	border-radius: var(--radius) 0 0 var(--radius);
+	height:100%;
+	width: 126px;
+}
+.best_lodgings h3, .best_lodgings p {
+	margin:5px 20px 5px 0px;
+	color: black;
+	width: 160px;
+}
+.best_lodgings h3, .best_lodgings p, .grades {
+	margin-left: 15px;
+}
+.best_lodgings .grades {
+	margin: 30px 0 0 15px;
+	font-size: 13px;
+}
+.best_lodgings a {
+	text-decoration: none;
+}
+.img_soleil {
+	background-image: url(images/hébergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+.img_coeur {
+	background-image: url(images/hébergements/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+.img_bleu {
+	background-image: url(images/hébergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
 /*Bas de page*/
 footer {
