@@ -253,7 +253,7 @@ main {
 }
 .lodging .img {
 	border-radius: var(--radius2);
-	height:115px;
+	height: 115px;
 	width: 100%;
 }
 .img_cannebière {
@@ -376,14 +376,14 @@ main {
 	height: 430px;
 	width: 100%;
 }
+.activities h3 {
+	margin-left: 15px;
+}
 .activity_card {
 	border-radius: var(--radius);
 	box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
 }
-.activities h3 {
-	margin-left: 15px;
-}
-.activities .img {
+.img_activity {
 	border-radius: var(--radius2);
 }
 .activity_vieux_port {
@@ -394,6 +394,8 @@ main {
 	background-image: url(images/activités/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 	width: 100%;
 	height: 380px;
+	background-size: cover;
+	background-position: top;
 }
 .activity_fort {
 	height:215px;
@@ -404,6 +406,8 @@ main {
 	background-image: url(images/activités/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
 	width: 100%;
 	height: 165px;
+	background-size: cover;
+	background-position: bottom 265px center;
 }
 .activity_iles {
 	height: 175px;
@@ -413,6 +417,7 @@ main {
 	background-image: url(images/activités/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
 	width: 100%;
 	height: 125px;
+	background-size: cover;
 }
 .activity_parc_national {
 	height:430px;
@@ -422,6 +427,8 @@ main {
 	background-image: url(images/activités/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
 	width: 100%;
 	height: 380px;
+	background-size: cover;
+	background-position: center;
 }
 .activity_notre_dame {
 	height:190px;
@@ -432,6 +439,7 @@ main {
 	background-image: url(images/activités/florian-wehde-xW9e8gdotxI-unsplash.jpg);
 	width: 100%;
 	height: 140px;
+	background-size: cover;
 }
 .activity_parc_longchamp {
 	height:200px;
@@ -441,6 +449,7 @@ main {
 	background-image: url(images/activités/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
 	width: 100%;
 	height: 150px;
+	background-size: cover;
 }
 /*Bas de page*/
 footer {
