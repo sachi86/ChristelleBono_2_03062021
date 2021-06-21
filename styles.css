@@ -1,92 +1,112 @@
 :root
 {
-    --color1: #f2f2f2;
-    --color2: #0065fc;
-	--color3: #DEEBFF;
+    --lightgrey: #f2f2f2;
+    --blue: #0065fc;
+	--lightblue: #DEEBFF;
 	--radius: 20px;
 	--radius2: 20px 20px 0 0;
 }
+
 body {
 	font-family: 'Raleway', sans-serif;
 	display: flex;
 	justify-content: center;
 }
+
 #container {
 	width: 100%;
 }
+
 .menu a:visited, .column_footer a:visited, .lodging a:visited, .best_lodgings a:visited, .activities a:visited {
 	color: black;
 }
+
 .signup a:visited {
-	color: var(--color2);
+	color: var(--blue);
 }
+
 .lodging_card:hover, .best_lodging_card:hover, .activity_card:hover {
 	transform: scale(1.05);
 	box-shadow: 5px 5px 10px rgb(177 177 177 / 20%);
 	transition: 1s;
 }
+
 a {
 	text-decoration: none;
 }
+
 h3 {
 	font-size: 15px;
 }
+
 p, li, .filter_name {
 	font-size: 14px;
 }
+
 .img {
 	background-size: cover;
 	background-position: center;
 }
-/*En-tête*/
+/***************************************herder*******************************************/
 header {
 	display: flex;
 	justify-content: space-between;
 }
+
 #logo {
 	width: 100px;
 	padding: 35px 0 0 50px;
 }
+
 nav {
     display: flex;
     align-items: center;
 }
+
 nav ul {
 	display: flex;
 }
+
 nav li, nav a {
 	list-style: none;
 }
+
 .menu a {
 	padding: 39px 34px 0 34px;
 }
+
 .menu a:hover {
-	color:  var(--color2);
-	border-top: solid 3px var(--color2);
+	color:  var(--blue);
+	border-top: solid 3px var(--blue);
 }
+
 .signup {
-	color: var(--color2);
+	color: var(--blue);
 	font-weight: bold;
 	padding: 39px 20px 0 20px;
 	margin-right: 58px;
 }
+
 .lightblue_link a:hover {
-	color: var(--color3);
-	border-top: solid 3px var(--color3) ;
+	color: var(--lightblue);
+	border-top: solid 3px var(--lightblue) ;
 }
-/*section recherche*/
+/************************************section of search***********************************/
 #search_section {
 	padding: 50px 0px 30px 50px;
 }
+
 .search_city {
 	display: flex;
 	flex-direction: row;
 	margin-top: 20px;
 }
+
 #search_title {
 	font-size: 20px;
 	line-height: 4px;
 }
+
 #mapmarker {
 	display: flex;
 	justify-content: center;
@@ -95,65 +115,73 @@ nav li, nav a {
 	height: 50px;
 	font-size: 20px;
 	border-radius: 15px 0 0 15px;
-	background-color: var(--color1)
+	background-color: var(--lightgrey)
 }
+
 #search {
 	width:200px;
 	height: 50px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: bolder;
 	font-size: 15px;
-	border: solid 1px var(--color1);
+	border: solid 1px var(--lightgrey);
 	padding-left: 15px;
 }
+
 ::placeholder {
 	color: black;
 }
+
 #search:focus {
-	border-color:var(--color2);
-	outline: var(--color2);
+	border-color:var(--blue);
+	outline: var(--blue);
 }
+
 .button {
 	width: 135px;
 	height: 50px;
-	background-color: var(--color2);
+	background-color: var(--blue);
 	border-radius: 0 15px 15px 0;
-	color: var(--color1);
+	color: var(--lightgrey);
 	border: none;
 	font-family: 'Raleway', sans-serif;
 	font-size:15px
 }
-/*filtres de recherche*/
+/*search's filters*/
 .filters {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	margin: 20px 0 20px 0;
 }
+
 .filters form {
 	display: flex;
 	flex-direction: row;
 	list-style: none;
 }
+
 .filters label {
 	display: flex;
 	flex-direction: row;
 	border: solid 2px;
 	border-radius: 50px;
-	border-color: var(--color1);
+	border-color: var(--lightgrey);
 	height: 50px;
 	cursor: pointer;
 }
+
 .filter_icon {
-	color: var(--color2);
+	color: var(--blue);
 	border-radius: 50px;
     font-size: 16px;
     width: 50px;
 	padding: 17px 0 17px 0;
 	text-align:center;
-	background-color: var(--color3);
+	background-color: var(--lightblue);
 	z-index: auto;
 }
+
 .filter_name {
 	display: flex;
 	align-items: center;
@@ -162,6 +190,7 @@ nav li, nav a {
 	padding: 10px 15px 10px 10px;
 	z-index: auto;
 }
+
 .filters input[type="checkbox"] {
 	display: flex;
 	position: relative;
@@ -175,30 +204,36 @@ nav li, nav a {
 	-webkit-appearance:none;
 	-o-appearance:none;
 }
+
 .filters input[type="checkbox"]:checked + label .filter_icon{
-	color: var(--color3);
-	border-color: var(--color3);
-	background-color: var(--color2);
+	color: var(--lightblue);
+	border-color: var(--lightblue);
+	background-color: var(--blue);
 }
+
 .filters input[type="checkbox"]:checked + label {
-	color: var(--color2);
-	border-color: var(--color3);
-	background-color: var(--color3);
+	color: var(--blue);
+	border-color: var(--lightblue);
+	background-color: var(--lightblue);
 }
+
 .filters input[type="checkbox"]:checked + label {
-	color: var(--color2);
-	border-color: var(--color3);
-	background-color: var(--color3);
+	color: var(--blue);
+	border-color: var(--lightblue);
+	background-color: var(--lightblue);
 }
+
 .filters label:hover  {
-	border:0.1px solid var(--color2);
-	background-color: var(--color3);
+	border:0.1px solid var(--blue);
+	background-color: var(--lightblue);
 }
+
 .info
 {
     display: flex;
     align-items: center;
 }
+
 .info .fa-info
 {
     display: flex;
@@ -210,31 +245,34 @@ nav li, nav a {
     padding: 5px;
     color: var(--color2);
     font-size: .8rem;
-    border: 1px solid var(--color1);
+    border: 1px solid var(--lightgrey);
     border-radius: 15px;
 }
+
 main {
 	margin: 0 50px 20px 50px;
 	display: flex;
 	flex-flow:row wrap;
 	justify-content: space-between;
 }
-/*section hébergements*/
+/***************************section of lodgings in Marseilles*******************************/
 .lodging {
 	display:flex;
 	flex-flow: column wrap;
 	width: 815px;
 	height: 605px;
 	padding: 30 10 10 10;
-	background-color: var(--color1);
+	background-color: var(--lightgrey);
 	border-radius: 20px;
 	margin-right: 20px;
 }
+
 .lodging h2 {
 	text-align: start;
 	margin: 40px 0 0 40px;
 	font-size: 20px;
 }
+
 .lodging_cards {
 	display: flex;
 	flex-flow: column wrap;
@@ -242,6 +280,7 @@ main {
 	width: 769px;
 	margin: 0px 20px 0px 20px;
 }
+
 .lodging_card {
 	width: 220px;
 	height: 185px;
@@ -251,63 +290,78 @@ main {
 	box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
 	margin:15px;
 }
+
 .lodging .img {
 	border-radius: var(--radius2);
 	height: 115px;
 	width: 100%;
 }
+
 .img_cannebière {
-	background-image: url(images/hébergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+	background-image: url(pictures/lodging/auberge_la_cannebiere.jpg);
 }
+
 .img_mer {
-	background-image: url(images/hébergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+	background-image: url(pictures/lodging/hotel_de_la_mer.jpg);
 }
+
 .img_port {
-	background-image: url(images/hébergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+	background-image: url(pictures/lodging/hotel_du_port.jpg);
 }
+
 .img_panier {
-	background-image: url(images/hébergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+	background-image: url(pictures/lodging/auberge_le_panier.jpg);
 }
+
 .img_mouette {
-	background-image: url(images/hébergements/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+	background-image: url(pictures/lodging/hotel_les_mouettes.jpg);
 }
+
 .img_amina {
-	background-image: url(images/hébergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+	background-image: url(pictures/lodging/hotel_chez_anima.jpg);
 }
+
 .lodging h3, .lodging p {
 	margin:5px 0 5px 0;
 	color: black;
 }
+
 .lodging h3, .lodging p, .grade {
 	margin-left: 10px;
 }
+
 .lodging i {
 	margin: 0;
 	font-size: 13px;
 }
+
 .star_blue {
-	color:var(--color2)
+	color:var(--blue)
 }
+
 .star_grey {
-	color: var(--color1)
+	color: var(--lightgrey)
 }
+
 .show_more {
 	margin: 20px 0 0 40px;
 	font-weight: bolder;
 	align-self: flex-start;
 }
+
 .lodging .show_more:hover {
-	color: var(--color2);
+	color: var(--blue);
 }
-/*Section Les plus populaires*/
+/*****************************Section of The most popular********************************/
 .best_lodgings {
 	display:flex;
 	flex-direction: column;
 	width: 385px;
 	height: 605px;
-	background-color: var(--color1);
+	background-color: var(--lightgrey);
 	border-radius: 20px;
 }
+
 .best_lodging_title {
 	display: flex;
 	flex-direction: row;
@@ -315,15 +369,18 @@ main {
 	align-items: center;
 	margin-top: 20px;
 }
+
 .best_lodgings h2 {
 	margin-bottom: 0px;
 	font-size: 20px;
 }
+
 .best_lodging_cards {
 	display: flex;
 	flex-direction: column;
 	margin: 0px 20px 20px 20px;
 }
+
 .best_lodging_card {
 	display:flex;
 	flex-flow: column wrap;
@@ -335,33 +392,40 @@ main {
 	box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
 	margin: 15px;
 }
+
 .img_best_lodging {
 	border-radius: var(--radius) 0 0 var(--radius);
 	height:100%;
 	width: 126px;
 }
+
 .best_lodgings h3, .best_lodgings p {
 	margin:5px 20px 5px 0px;
 	color: black;
 	width: 160px;
 }
+
 .best_lodgings h3, .best_lodgings p, .grades {
 	margin-left: 15px;
 }
+
 .best_lodgings .grades {
 	margin: 30px 0 0 15px;
 	font-size: 13px;
 }
+
 .img_soleil {
-	background-image: url(images/hébergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+	background-image: url(pictures/lodging/hotel_le_soleil_du_matin.jpg);
 }
+
 .img_coeur {
-	background-image: url(images/hébergements/aw-creative-VGs8z60yT2c-unsplash.jpg);
+	background-image: url(pictures/lodging/au_coeur_de_l_eau.jpg);
 }
+
 .img_bleu {
-	background-image: url(images/hébergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+	background-image: url(pictures/lodging/hotel_tout_bleu_et_blanc.jpg);
 }
-/*Section Activités à Marseilles*/
+/**************************Section of activities in Marseilles*******************************/
 .activities {
 	width: 100%;
 	height: 500;
@@ -369,6 +433,7 @@ main {
 	flex-flow: column wrap;
 	margin: 40px 0 50px 0;
 }
+
 .activities_cards {
 	display:flex;
 	flex-flow: column wrap;
@@ -376,100 +441,178 @@ main {
 	height: 430px;
 	width: 100%;
 }
+
 .activities h3 {
 	margin-left: 15px;
 }
+
 .activity_card {
 	border-radius: var(--radius);
 	box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
 }
+
 .img_activity {
 	border-radius: var(--radius2);
 }
+
 .activity_vieux_port {
 	height:430px;
 	width: 275px;
 }
+
 .img_vieux_port {
-	background-image: url(images/activités/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+	background-image: url(pictures/activities/vieux_port.jpg);
 	width: 100%;
 	height: 380px;
 	background-size: cover;
 	background-position: top;
 }
+
 .activity_fort {
 	height:215px;
 	width: 280px;
 	margin-bottom: 40px;
 }
+
 .img_fort {
-	background-image: url(images/activités/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+	background-image: url(pictures/activities/fort_de_pomegues.jpg);
 	width: 100%;
 	height: 165px;
 	background-size: cover;
 	background-position: bottom 265px center;
 }
+
 .activity_iles {
 	height: 175px;
 	width: 280px;
 }
+
 .img_iles {
-	background-image: url(images/activités/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+	background-image: url(pictures/activities/iles_du_frioul.jpg);
 	width: 100%;
 	height: 125px;
 	background-size: cover;
 }
+
 .activity_parc_national {
 	height:430px;
 	width: 280px;
 }
+
 .img_parc_national {
-	background-image: url(images/activités/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+	background-image: url(pictures/activities/parc_national_des_calanques.jpg);
 	width: 100%;
 	height: 380px;
 	background-size: cover;
 	background-position: center;
 }
+
 .activity_notre_dame {
 	height:190px;
 	width: 280px;
 	margin-bottom: 40px;
 }
+
 .img_notre_dame {
-	background-image: url(images/activités/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+	background-image: url(pictures/activities/notre_dame_de_la_garde.jpg);
 	width: 100%;
 	height: 140px;
 	background-size: cover;
 }
+
 .activity_parc_longchamp {
 	height:200px;
 	width: 280px;
 }
+
 .img_parc_longchamp {
-	background-image: url(images/activités/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+	background-image: url(pictures/activities/parc_longchamp.jpg);
 	width: 100%;
 	height: 150px;
 	background-size: cover;
 }
-/*Bas de page*/
+/*******************************************Footer***************************************/
 footer {
 	display:flex;
 	flex-direction: row;
 	height: 216px;
-	background-color: var(--color1);
+	background-color: var(--lightgrey);
 }
+
 .column_footer a:hover {
-	color: var(--color2);
+	color: var(--blue);
 }
+
 footer ul {
 	list-style: none;
 	padding: 0;
 }
+
 .column_footer {
 	padding: 30px 0 0 50px;
 	margin-right: 200px;
 }
+
 .column_footer li {
 	padding: 0 0 15px 0;
 	font-size: 14px;
 }
+
+/********************************************Média Queries***************************************************/
+@media only screen and (max-width: 970px)
+{
+	body {
+		width: auto;
+	}
+
+    .container {
+		margin: auto;
+	}
+
+	header {
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+
+	.lightblue_link {
+		flex: 1;
+	}
+
+	.menu a:hover {
+		color: var(--blue);
+		border-bottom: 2px solid var(--blue);
+		border-top: 0px;
+		padding-bottom: 15px;
+	}
+
+	.signup a:hover {
+		color: var(--lightblue);
+	}
+
+	main {
+		flex-direction: column;
+	}
+	.lodging {
+		flex-direction: column;
+	}
+
+	.lodging_card {
+		width: 100%;
+		height: initial;
+	}
+
+	.best_lodgings {
+		flex: 1;
+	}
+}
+
+@media only screen and (min-width:490px) and (max-width: 970px)
+{   
+   
+}
+
+@media only screen and (min-width: 723px) and (max-width: 880px)
+{
+    
+}
+
