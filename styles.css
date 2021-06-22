@@ -561,12 +561,13 @@ footer ul {
 /********************************************Média Queries***************************************************/
 @media only screen and (max-width: 970px)
 {
-	body {
-		width: auto;
+	#container {
+		width: 100%;
 	}
 
-    .container {
-		margin: auto;
+    .main {
+		flex-direction: column;
+		margin: 0;
 	}
 
 	header {
@@ -589,20 +590,83 @@ footer ul {
 		color: var(--lightblue);
 	}
 
-	main {
+	.filters {
 		flex-direction: column;
 	}
-	.lodging {
+
+	.filters form {
+		flex-wrap: wrap;
+	}
+
+	main {
 		flex-direction: column;
+		width: 100%;
+		margin:0;
+	}
+
+	.lodging {
+		width: 100%;
+		height: initial;
+		background-color: initial;
+	}
+
+	.lodging_cards {
+		width: 100%;
+		flex-direction: column;
+		height: initial;
 	}
 
 	.lodging_card {
 		width: 100%;
-		height: initial;
+		height:200px;
 	}
 
 	.best_lodgings {
-		flex: 1;
+		width: 100%;
+		height: initial;
+		border-radius: initial;
+		margin: 0;
+	}
+
+	.best_lodging_cards {
+		width: 100%;
+		height: initial;
+	}
+
+	.best_lodging_card {
+		width: 100%;
+	}
+	
+	.activities {
+		width: 100%;
+		height: initial;
+	}
+
+	.activities_cards {
+		flex-direction: column;
+		width: 100%;
+		height: initial;
+		margin: 0;
+	}
+
+	.activity_vieux_port, .activity_fort, .activity_iles, .activity_parc_national, .activity_notre_dame, .activity_parc_longchamp {
+		width: 100%;
+		height: 192px;
+	}
+
+	.img_vieux_port, .img_fort, .img_iles, .img_parc_national, .img_notre_dame, .img_parc_longchamp {
+		height:134px;
+		width: 100%;
+	}
+
+	footer {
+		flex-direction: column;
+		width: 100%;
+		height: initial;
+	}
+	.column_footer {
+		margin: 30px 0 0 0;
+		padding: 0;
 	}
 }
 
@@ -615,4 +679,5 @@ footer ul {
 {
     
 }
+
 
