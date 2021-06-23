@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 :root
 {
     --lightgrey: #f2f2f2;
@@ -47,6 +52,7 @@ p, li, .filter_name {
 	background-size: cover;
 	background-position: center;
 }
+/****************************************************************************************/
 /***************************************herder*******************************************/
 header {
 	display: flex;
@@ -61,6 +67,7 @@ header {
 nav {
     display: flex;
     align-items: center;
+	padding-top: 19px;
 }
 
 nav ul {
@@ -72,25 +79,26 @@ nav li, nav a {
 }
 
 .menu a {
-	padding: 39px 34px 0 34px;
+	padding: 40px 34px 0 34px;
 }
 
 .menu a:hover {
 	color:  var(--blue);
-	border-top: solid 3px var(--blue);
+	border-top: solid 2px var(--blue);
 }
 
 .signup {
 	color: var(--blue);
 	font-weight: bold;
-	padding: 39px 20px 0 20px;
+	padding: 40px 20px 0 25px;
 	margin-right: 58px;
 }
 
 .lightblue_link a:hover {
 	color: var(--lightblue);
-	border-top: solid 3px var(--lightblue) ;
+	border-top: solid 2px var(--lightblue) ;
 }
+/****************************************************************************************/
 /************************************section of search***********************************/
 #search_section {
 	padding: 50px 0px 30px 50px;
@@ -99,12 +107,12 @@ nav li, nav a {
 .search_city {
 	display: flex;
 	flex-direction: row;
-	margin-top: 20px;
+	margin: 20px 0 30px 0;
 }
 
 #search_title {
 	font-size: 20px;
-	line-height: 4px;
+	padding-bottom: 10px;
 }
 
 #mapmarker {
@@ -197,7 +205,7 @@ nav li, nav a {
 	height: 50px;
 	width: 160px;
 	margin-right: -160px;
-	margin-left: 50px;
+	margin-left: 40px;
 	z-index: 1;
 	opacity: 0.1;
 	-moz-appearance:none;
@@ -255,6 +263,7 @@ main {
 	flex-flow:row wrap;
 	justify-content: space-between;
 }
+/*******************************************************************************************/
 /***************************section of lodgings in Marseilles*******************************/
 .lodging {
 	display:flex;
@@ -352,6 +361,7 @@ main {
 .lodging .show_more:hover {
 	color: var(--blue);
 }
+/****************************************************************************************/
 /*****************************Section of The most popular********************************/
 .best_lodgings {
 	display:flex;
@@ -425,6 +435,7 @@ main {
 .img_bleu {
 	background-image: url(pictures/lodging/hotel_tout_bleu_et_blanc.jpg);
 }
+/********************************************************************************************/
 /**************************Section of activities in Marseilles*******************************/
 .activities {
 	width: 100%;
@@ -443,7 +454,7 @@ main {
 }
 
 .activities h3 {
-	margin-left: 15px;
+	margin: 15px 0 0 15px;
 }
 
 .activity_card {
@@ -531,6 +542,7 @@ main {
 	height: 150px;
 	background-size: cover;
 }
+/****************************************************************************************/
 /*******************************************Footer***************************************/
 footer {
 	display:flex;
@@ -541,6 +553,10 @@ footer {
 
 .column_footer a:hover {
 	color: var(--blue);
+}
+
+footer h3 {
+	margin-bottom: 15px;
 }
 
 footer ul {
@@ -557,36 +573,60 @@ footer ul {
 	padding: 0 0 15px 0;
 	font-size: 14px;
 }
-
+/************************************************************************************************************/
 /********************************************Média Queries***************************************************/
-@media only screen and (max-width: 970px)
+@media only screen and (max-width: 480px)
 {
+	html {
+		-webkit-overflow-x: hidden;
+		overflow-x: hidden;
+	  }
+	body {
+		-webkit-overflow-x: hidden;
+		overflow-x: hidden;
+	  }
 	#container {
 		width: 100%;
-	}
-
-    .main {
-		flex-direction: column;
-		margin: 0;
+		margin: auto;
+		padding: auto;
 	}
 
 	header {
-		flex-flow: row wrap;
-		justify-content: space-between;
+		flex-flow: column wrap;
 	}
+	.logo {
+		margin-top: 25px;
+		position: absolute;
+	  }
 
-	.lightblue_link {
-		flex: 1;
-	}
+	.nav {
+		flex-flow: column-reverse wrap;
+	  }
 
-	.menu a:hover {
-		color: var(--blue);
-		border-bottom: 2px solid var(--blue);
-		border-top: 0px;
+	.menu {
+		width: 100%;
+		padding-left: 0;
+		margin-right: 0;
+		border-bottom: solid 2.5px var(--lightgrey);
 		padding-bottom: 15px;
-	}
+	  }
+	.signup {
+		text-align: center;
+		order:-1;
+		width: 100%;
+		padding-bottom: 15px;
+		padding-top: 25px;
+	  }
+	.menu:hover {
+		border-bottom: solid 2.5px var(--blue);
+		border-top: none;
+		padding-bottom: 10px;
+	  }
+	.signup {
+		margin-right: 25px;
+	  }
 
-	.signup a:hover {
+	.signup:hover {
 		color: var(--lightblue);
 	}
 
@@ -603,55 +643,72 @@ footer ul {
 		width: 100%;
 		margin:0;
 	}
-
 	.lodging {
 		width: 100%;
 		height: initial;
 		background-color: initial;
+		margin: 0;
 	}
 
 	.lodging_cards {
 		width: 100%;
 		flex-direction: column;
+		align-items: center;
 		height: initial;
+		margin: 0;
 	}
 
 	.lodging_card {
-		width: 100%;
+		width: 85%;
 		height:200px;
+		margin: 0 0 20px 0;
 	}
 
 	.best_lodgings {
 		width: 100%;
+		order: -1;
+		align-items: center;
 		height: initial;
 		border-radius: initial;
 		margin: 0;
 	}
 
+	.best_lodging_title {
+		justify-content: space-around;
+		align-items: stretch;
+		align-content: center;
+	}
+
 	.best_lodging_cards {
-		width: 100%;
+		width: 85%;
 		height: initial;
+		align-items: center;
+		margin: 0;
 	}
 
 	.best_lodging_card {
 		width: 100%;
+		margin: 0 0 20px 0;
 	}
 	
 	.activities {
 		width: 100%;
+		margin: 0;
+		align-items: center;
 		height: initial;
 	}
 
 	.activities_cards {
 		flex-direction: column;
 		width: 100%;
+		align-content: center;
 		height: initial;
 		margin: 0;
 	}
-
 	.activity_vieux_port, .activity_fort, .activity_iles, .activity_parc_national, .activity_notre_dame, .activity_parc_longchamp {
-		width: 100%;
+		width: 85%;
 		height: 192px;
+		margin: 0 0 20px 0;
 	}
 
 	.img_vieux_port, .img_fort, .img_iles, .img_parc_national, .img_notre_dame, .img_parc_longchamp {
@@ -663,21 +720,15 @@ footer ul {
 		flex-direction: column;
 		width: 100%;
 		height: initial;
+		padding-top: 30px;
 	}
 	.column_footer {
-		margin: 30px 0 0 0;
+		margin: 0 0 0 20px;
 		padding: 0;
 	}
 }
 
-@media only screen and (min-width:490px) and (max-width: 970px)
-{   
-   
-}
 
-@media only screen and (min-width: 723px) and (max-width: 880px)
-{
-    
-}
+
 
 
