@@ -8,8 +8,8 @@
     --lightgrey: #f2f2f2;
     --blue: #0065fc;
 	--lightblue: #DEEBFF;
-	--radius: 20px;
-	--radius2: 20px 20px 0 0;
+	--radius: 15px;
+	--radius2: 15px 15px 0 0;
 }
 
 body {
@@ -89,7 +89,7 @@ nav li, nav a {
 
 .menu a:hover {
 	color:  var(--blue);
-	border-top: solid 2px var(--blue);
+	border-top: solid 2.5px var(--blue);
 }
 
 .signup {
@@ -100,9 +100,9 @@ nav li, nav a {
 	margin-right: 58px;
 }
 
-.lightblue_link a:hover {
+.lightblue_link:hover {
 	color: var(--lightblue);
-	border-top: solid 2px var(--lightblue) ;
+	border-top: solid 2.5px var(--lightblue) ;
 }
 /****************************************************************************************/
 /************************************section of search***********************************/
@@ -139,7 +139,7 @@ nav li, nav a {
 	font-weight: bolder;
 	font-size: 15px;
 	border: solid 1px var(--lightgrey);
-	padding-left: 15px;
+	padding: 15px;
 }
 
 ::placeholder {
@@ -152,14 +152,24 @@ nav li, nav a {
 }
 
 .button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 135px;
 	height: 50px;
 	background-color: var(--blue);
 	border-radius: 0 15px 15px 0;
-	color: var(--lightgrey);
+	color: white;
 	border: none;
 	font-family: 'Raleway', sans-serif;
-	font-size:15px
+	font-size:15px;
+	font-weight: bolder;
+
+}
+
+.button i {
+	visibility: hidden;
+	width: 0;
 }
 /*search's filters*/
 .filters {
@@ -598,46 +608,84 @@ footer ul {
 		overflow-x: hidden;
 	  }
 	body {
+		margin: 0;
 		-webkit-overflow-x: hidden;
 		overflow-x: hidden;
 	  }
-	#container {
-		width: 100%;
-		margin: auto;
-		padding: auto;
-	}
-
-	.logo {
-		margin: 25px 0 0 0;
+	#logo {
+		margin-top: 25px;
+		margin-left: 5%;
 		position: absolute;
+		padding: 0;
 	  }
-
-	  .
-	.menu {
+	.nav_bar {
+		width: 100vw;
+		position: relative;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	  }
+	nav ul {
 		width: 100%;
 		padding-left: 0;
 		margin-right: 0;
+	  }
+	nav ul li {
 		border-bottom: solid 2.5px var(--lightgrey);
 		padding-bottom: 15px;
 	  }
-	.signup {
+	  .menu {
 		text-align: center;
-		order:-1;
 		width: 100%;
 		padding-bottom: 15px;
 		padding-top: 25px;
 	  }
-	.menu:hover {
+	  .menu a:hover, nav ul li:hover {
 		border-bottom: solid 2.5px var(--blue);
-		border-top: none;
-		padding-bottom: 10px;
+		border-top: solid 2.5px transparent;
+		padding-bottom: 15px;
 	  }
-	.signup {
-		margin-right: 25px;
+	  .lightblue_link {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+
+	  }
+	  .signup {
+		margin-right:3%;
 	  }
 
 	.signup:hover {
+		border-top:transparent;
 		color: var(--lightblue);
+		font-size: 1rem;
+		transition: 1s;
+	}
+	#search_section {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	h1 {
+		margin-right: 5%;
+	}
+
+	#search input {
+		width: 100%;
+	}
+
+	.button {
+		width: 50px;
+		height: 50px;
+		margin-left: -10px;
+		border-radius: var(--radius);
+	}
+	.button span {
+		display: none;
+	}
+	.button i {
+		visibility: visible;
+		width: 20%;
 	}
 
 	.filters {
