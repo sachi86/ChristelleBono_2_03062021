@@ -56,6 +56,7 @@ p, li, .filter_name {
 /***************************************herder*******************************************/
 header {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -64,6 +65,10 @@ header {
 	padding: 35px 0 0 50px;
 }
 
+.nav_bar {
+	display: flex;
+	flex-direction: row;
+}
 nav {
     display: flex;
     align-items: center;
@@ -88,6 +93,7 @@ nav li, nav a {
 }
 
 .signup {
+	display: flex;
 	color: var(--blue);
 	font-weight: bold;
 	padding: 40px 20px 0 25px;
@@ -392,8 +398,7 @@ main {
 }
 
 .best_lodging_card {
-	display:flex;
-	flex-flow: column wrap;
+	display: flex;
 	height: 135px;
 	width: 305px;
 	border-radius: var(--radius);
@@ -402,6 +407,10 @@ main {
 	box-shadow: 5px 5px 10px rgb(177 177 177 / 40%);
 	margin: 15px;
 }
+ .best_lodgings a {
+	 display: flex;
+	 flex-direction: row;
+ }
 
 .img_best_lodging {
 	border-radius: var(--radius) 0 0 var(--radius);
@@ -409,6 +418,13 @@ main {
 	width: 126px;
 }
 
+.information {
+	width: 170px;
+	height: 135px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+}
 .best_lodgings h3, .best_lodgings p {
 	margin:5px 20px 5px 0px;
 	color: black;
@@ -591,18 +607,12 @@ footer ul {
 		padding: auto;
 	}
 
-	header {
-		flex-flow: column wrap;
-	}
 	.logo {
-		margin-top: 25px;
+		margin: 25px 0 0 0;
 		position: absolute;
 	  }
 
-	.nav {
-		flex-flow: column-reverse wrap;
-	  }
-
+	  .
 	.menu {
 		width: 100%;
 		padding-left: 0;
