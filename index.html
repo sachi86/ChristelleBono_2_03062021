@@ -52,32 +52,17 @@
                     <div class="filters">
                         <h3>Filtres</h3>
                         <form method="post" action="traitement.php">
-                            <input type="checkbox" name="filter">
-                            <label>
-                                <i class="fa fa-money-bill-wave filter_icon" aria-hidden="true"></i>
-                                <span class="filter_name">Economique</span>
-                            </label>
-                            <input type="checkbox" name="filter">
-                            <label>
-                                <i class="fa fa-child filter_icon" aria-hidden="true"></i>
-                                <span class="filter_name">Familial</span>
-                            </label>
-                            <input type="checkbox" name="filter">
-                            <label>
-                                <i class="fa fa-heart filter_icon" aria-hidden="true"></i>
-                                <span class="filter_name">Romantique</span>
-                            </label>
-                            <input type="checkbox" name="filter">
-                            <label>
-                                <i class="fas fa-dog filter_icon" aria-hidden="true"></i>
-                                <span class="filter_name">Animaux autorisés</span>
-                            </label>
+                            <input type="checkbox" name="filter" id="economic">
+                            <label for="economic"><i class="fas fa-money-bill-wave"></i><span>Économique</span></label>
+                            <input type="checkbox" name="filter" id="family">
+                            <label for="family"><i class="fas fa-child"></i><span>Familial</span></label>
+                            <input type="checkbox" name="filter" id="romantic">
+                            <label for="romantic"><i class="fas fa-heart"></i><span>Romantique</span></label>
+                            <input type="checkbox" name="filter" id="pets">
+                            <label for="pets"><i class="fas fa-dog"></i><span>Animaux autorisés</span></label>
                         </form>
                     </div>
-                    <div class="info">
-                        <i class="fa fa-info info_icon" aria-hidden="true"></i>
-                        <p class="paragraph_info">Plus de 500 logements sont disponibles dans cette ville</p>
-                    </div>
+                    <p class="search_info"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
                 </section>
                 <main>
                 <!------------------------------Section of Lodings in Marseilles----------------------------->
