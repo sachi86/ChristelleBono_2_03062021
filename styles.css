@@ -164,12 +164,17 @@ nav li, nav a {
 	font-family: 'Raleway', sans-serif;
 	font-size:15px;
 	font-weight: bolder;
+	cursor: pointer;
 
 }
 
 .button i {
 	visibility: hidden;
 	width: 0;
+}
+.button:hover {
+	transform: scale(1.05);
+	transition: 1s;
 }
 /*search's filters*/
 .filters input[type="checkbox"] {
@@ -243,7 +248,7 @@ nav li, nav a {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    transition: .2s;
+    transition: .1s;
 	font-size: 15px;
 	font-weight: bolder;
 }
