@@ -7,7 +7,7 @@
     --lightgrey: #f2f2f2;
     --blue: #0065fc;
 	--lightblue: #DEEBFF;
-	--radius: 15px;
+	--radius: 20px;
 }
 
 body {
@@ -291,7 +291,7 @@ main {
 	width: 815px;
 	height: 605px;
 	background-color: var(--lightgrey);
-	border-radius: 20px;
+	border-radius: var(--radius);
 	margin-right: 20px;
 }
 
@@ -320,7 +320,7 @@ main {
 }
 
 .lodging .img {
-	border-radius: 15px 15px 0 0;
+	border-radius: var(--radius) var(--radius) 0 0;
 	height: 115px;
 	width: 100%;
 }
@@ -375,6 +375,7 @@ main {
 	margin: 20px 0 0 40px;
 	font-weight: bolder;
 	align-self: flex-start;
+	color: black;
 }
 
 .lodging .show_more:hover {
@@ -388,7 +389,7 @@ main {
 	width: 385px;
 	height: 605px;
 	background-color: var(--lightgrey);
-	border-radius: 20px;
+	border-radius: var(--radius);
 }
 
 .best_lodging_title {
@@ -499,7 +500,7 @@ main {
 }
 
 .img_activity {
-	border-radius: 15px 15px 0 0;
+	border-radius: var(--radius) var(--radius) 0 0;
 }
 
 .activity_vieux_port {
@@ -610,6 +611,8 @@ footer ul {
 .column_footer li {
 	padding: 0 0 15px 0;
 	font-size: 0.875rem;
+}
+.column_footer li a {
 	color: black;
 }
 /**********************************************************************************************************/
