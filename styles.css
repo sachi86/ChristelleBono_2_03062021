@@ -50,6 +50,10 @@ p, li, .filter_name {
 	background-size: cover;
 	background-position: center;
 }
+.lodging_card em, .best_lodging_card em {
+	font-weight: bolder;
+	font-style: initial;
+}
 /****************************************************************************************/
 /***************************************herder*******************************************/
 header {
