@@ -21,7 +21,7 @@ body {
 	max-width: 1354px;
 }
 
-.menu a:visited, .column_footer a:visited, .lodging a:visited, .best_lodgings a:visited, .activities a:visited {
+.menu a:visited, .column_footer a:visited, .lodging a:visited, .best_lodgings a:visited, .activities a:visited .show_more a:visited {
 	color: black;
 }
 
@@ -32,7 +32,6 @@ body {
 .lodging_card:hover, .best_lodging_card:hover, .activity_card:hover {
 	transform: scale(1.05);
 	box-shadow: 5px 5px 10px rgb(177 177 177 / 20%);
-	transition: 1s;
 }
 
 a {
@@ -174,7 +173,6 @@ nav li, nav a {
 }
 .button:hover {
 	transform: scale(1.05);
-	transition: 1s;
 }
 /*search's filters*/
 .filters input[type="checkbox"] {
@@ -213,11 +211,10 @@ nav li, nav a {
     border-radius: 50px;
     color: var(--blue);
     background-color: var(--lightblue);
-    transition: .1s;
     z-index: 2;
 }
 
-.filters span:hover {
+.filters label:hover span {
     transform: scale(1.05);
 	background-color: var(--lightblue);
 }
@@ -248,7 +245,6 @@ nav li, nav a {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    transition: .1s;
 	font-size: 15px;
 	font-weight: bolder;
 }
@@ -284,7 +280,7 @@ main {
 	justify-content: space-between;
 }
 /*******************************************************************************************/
-/***************************section of lodgings in Marseilles*******************************/
+/***************************section of lodgings in Marseille*******************************/
 .lodging {
 	display:flex;
 	flex-flow: column wrap;
@@ -298,7 +294,7 @@ main {
 .lodging h2 {
 	text-align: start;
 	margin: 40px 0 0 40px;
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 .lodging_cards {
@@ -306,7 +302,7 @@ main {
 	flex-flow: column wrap;
 	height: 450px;
 	width: 769px;
-	margin: 0px 20px 0px 20px;
+	margin: 5px 20px 0px 20px;
 }
 
 .lodging_card {
@@ -396,18 +392,18 @@ main {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 .best_lodgings h2 {
 	margin-bottom: 0px;
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 .best_lodging_cards {
 	display: flex;
 	flex-direction: column;
-	margin: 0px 20px 20px 20px;
+	margin: 5px 20px 10px 20px;
 }
 
 .best_lodging_card {
@@ -483,6 +479,9 @@ main {
 	height: 430px;
 	width: 100%;
 	margin-top: 20px;
+}
+.activities h2 {
+	font-size: 1.25rem;
 }
 
 .activities h3 {
