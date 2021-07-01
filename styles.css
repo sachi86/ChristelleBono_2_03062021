@@ -56,7 +56,7 @@ p, li, .filter_name {
 	font-style: initial;
 }
 /****************************************************************************************/
-/***************************************herder*******************************************/
+/***************************************header*******************************************/
 header {
 	display: flex;
 	flex-direction: row;
@@ -136,6 +136,10 @@ nav li, nav a {
 	font-size: 20px;
 	border-radius: 15px 0 0 15px;
 	background-color: var(--lightgrey)
+}
+.search_city form {
+	display: flex;
+	flex-direction: row;
 }
 
 #search {
@@ -408,6 +412,10 @@ main {
 	font-size: 1.25rem;
 }
 
+.best_lodging_title i:hover{
+	cursor: pointer;
+	color: var(--blue);
+}
 .best_lodging_cards {
 	display: flex;
 	flex-direction: column;
