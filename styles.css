@@ -89,6 +89,7 @@ nav li, nav a {
 
 .menu a {
 	padding: 40px 34px 0 34px;
+	border-top: solid 2.5px transparent;
 }
 
 .menu a:hover {
@@ -102,6 +103,7 @@ nav li, nav a {
 	font-weight: bold;
 	padding: 41px 20px 0 25px;
 	margin-right: 58px;
+	border-top: solid 2.5px transparent;
 }
 
 .signup:hover {
